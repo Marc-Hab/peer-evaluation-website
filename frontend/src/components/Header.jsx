@@ -28,11 +28,11 @@ function LoggedOut() {
   return (
     <div className="topright-display">
       <span className="sign-up" onClick={signupNav}>
-        SIGN UP
+        Sign Up
       </span>
 
       <span className="login" onClick={loginNav}>
-        LOG IN
+        Log In
       </span>
     </div>
   );
@@ -54,7 +54,7 @@ function LoggedIn() {
       <img src={homeIcon} alt="home" onClick={homeNav} />
 
       <span className="logout" onClick={logout}>
-        LOG OUT
+        Log Out
       </span>
     </div>
   );

@@ -30,6 +30,7 @@ header .topright-display {
   padding-right: 30px;
   margin-left: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 header .topright-display span,

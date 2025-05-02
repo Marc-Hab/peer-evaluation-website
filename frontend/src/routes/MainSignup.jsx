@@ -129,15 +129,15 @@ export default function MainSignup() {
             />
           </div>
 
-          <input type="submit" value="Create Account" />
-
           <span
             onClick={loginNav}
             className="already-account-option"
             title="Click here to log in"
           >
-            Already have an account?
+            already have an account?
           </span>
+
+          <input type="submit" value="Create Account" />
         </form>
       </main>
     </>

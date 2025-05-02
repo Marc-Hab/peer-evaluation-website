@@ -1,11 +1,11 @@
 .main-signup {
-  margin: 50px auto;
+  margin: 20px auto;
   font-family: 'Poppins', sans-serif;
 }
 
 .main-signup h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -20,15 +20,9 @@
 }
 
 .main-signup .fields {
-  /*
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  margin: 25px 30px;
-  */
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .main-signup .name{
@@ -54,23 +48,26 @@
   gap: 30px;
 }
 
-
 .main-signup .fields .radio-button label {
   font-size: 15px;
 }
 
 .main-signup .fields input:not([type="radio"]) {
   font-size: 13px;
-  padding: 0;
   padding-left: 5px;
   border: solid 1px #9F9F9F;
   border-radius: 5px;
   height: 45px;
-  transition: all 1s ease;
+}
+
+.main-signup .fields input:not([type="radio"]):focus {
+  border: solid 2px #c4b29c;
+  outline: none;
 }
 
 .main-signup .fields [type="email"],
 .main-signup .fields [type="password"] {
+  font-family: 'Poppins', sans-serif;
   width: 400px;
 }
 
@@ -79,18 +76,17 @@
 }
 
 .main-signup input[type="submit"] {
-  background-color: rgba(70 69 69 / 100%);
-  color: rgba(204 129 63 / 100%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   padding: 10px 50px;
-  margin: 30px 0;
-  border: none;
+  margin: 10px 0 30px 0;
+  border: solid 1pt black;
+  background-color: white;
   border-radius: 10px;
   transition: 0.3s;
 }
 
 .main-signup input[type="submit"]:hover {
-  color: rgba(70 69 69 / 100%);
-  background-color: rgba(204 129 63 / 100%);
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -100,8 +96,8 @@
 }
 
 .already-account-option {
-  color: rgba(30 30 30 / 100%);
-  font-size: 15px;
+  color: #7a7a7a;
+  font-size: 12px;
   font-weight: lighter;
   font-style: italic;
   text-decoration: underline;
@@ -110,6 +106,6 @@
 }
 
 .already-account-option:hover {
-  text-decoration-color:  rgb(34 33 33);
+  text-decoration-color:  #7a7a7a;
   cursor: pointer;
 }
