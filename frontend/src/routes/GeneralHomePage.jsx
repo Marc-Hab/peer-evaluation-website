@@ -1,21 +1,25 @@
 import "../css/general-home.css";
-import studentImage from "../pictures/StudentGroupPicture.jpeg";
+import studentImage from "../assets/student.jpg";
 export default function GeneralHomePage() {
   return (
     <main className="home-page">
       <h1>Welcome to our Peer Assessment Tool!</h1>
-
-      <img className="student-image" src={studentImage} alt="Student" />
-      <h2>What we do</h2>
-      <p>
-        Our platform is designed to enhance collaborative learning by enabling
-        students to anonymously evaluate their peers &#39; contributions. Instructors
-        benefit from robust management tools that allow them to efficiently
-        oversee team dynamics and monitor individual and group performance. With
-        our platform, educators can easily identify strengths and areas for
-        improvement, facilitating targeted support and enhancing the overall
-        learning experience.
-      </p>
+      
+      <div className="contents">
+        <div className="image-wrapper">
+          <img className="student-image" src={studentImage} alt="Student" />
+        </div>
+        
+        <div className="context">
+          <h2>About us</h2>
+          <p>
+          Peerly is a peer assessment platform designed to make group work accountability effortless. <br/> <br/>
+          Founded with a focus on clarity and fairness, Peerly helps students 
+          and teams give and receive structured, meaningful feedback. <br/><br/>
+          We work closely with educators and institutions who value transparency and want to foster a culture of constructive collaboration.
+          </p>
+        </div>
+      </div>
     </main>
   );
 }

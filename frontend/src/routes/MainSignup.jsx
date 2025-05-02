@@ -55,47 +55,47 @@ export default function MainSignup() {
   return (
     <>
       <main className="main-signup">
-        <h2>SIGN UP</h2>
+        <h2>Account details</h2>
         <form onSubmit={handleSubmit}>
           <div className="fields">
-            <label>User Type: </label>
+            <label>User Type</label>
             <div className="radio-button">
               <label>
-                Student
                 <input type="radio" name="type" value="student" required />
+                Student
               </label>
 
               <label>
-                Teacher
                 <input type="radio" name="type" value="teacher" required />
+                Teacher
               </label>
             </div>
 
-            <label>First Name:</label>
-            <input
-              type="text"
-              id="first-name"
-              placeholder="Jane"
-              name="first-name"
-              minLength="2"
-              maxLength="30"
-              pattern="^[a-zA-Z]+$"
-              required
-            />
-
-            <label>Last Name:</label>
-            <input
-              type="text"
-              id="last-name"
-              placeholder="Doe"
-              name="last-name"
-              minLength="2"
-              maxLength="50"
-              pattern="^[a-zA-Z]+$"
-              required
-            />
-
-            <label>Email Address:</label>
+            <div className="name">
+              <label>First Name</label>
+              <label>Last Name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Jane"
+                name="first-name"
+                minLength="2"
+                maxLength="30"
+                pattern="^[a-zA-Z]+$"
+                required
+              />
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Doe"
+                name="last-name"
+                minLength="2"
+                maxLength="50"
+                pattern="^[a-zA-Z]+$"
+                required
+              />
+            </div>
+            <label>Email Address</label>
             <input
               type="email"
               id="email"
@@ -105,7 +105,7 @@ export default function MainSignup() {
               required
             />
 
-            <label>Password:</label>
+            <label>Password</label>
             <input
               type="password"
               id="password"
@@ -116,7 +116,7 @@ export default function MainSignup() {
               required
             />
 
-            <label>Confirm Password:</label>
+            <label>Confirm Password</label>
             <input
               type="password"
               id="confirm-password"

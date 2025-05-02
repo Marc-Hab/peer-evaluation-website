@@ -10,7 +10,8 @@ export default function Header() {
 
   return (
     <header>
-      <img src={logo} alt="Flowers in Chania" className="logo"></img>
+      <img src={logo} alt="Peerly Logo" className="logo"></img>
+      <span className="website_name">Peerly</span>
       {token ? <LoggedIn /> : <LoggedOut />}
     </header>
   );
@@ -31,7 +32,7 @@ function LoggedOut() {
       </span>
 
       <span className="login" onClick={loginNav}>
-        LOGIN
+        LOG IN
       </span>
     </div>
   );

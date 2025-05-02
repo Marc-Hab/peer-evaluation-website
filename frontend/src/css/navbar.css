@@ -1,6 +1,9 @@
 nav {
-  background-color: rgba(255 255 255);
+  background-color: #E6D8C8;
   padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
 }
 
 nav > ul {
@@ -9,19 +12,17 @@ nav > ul {
   justify-content: center;
   list-style-type: none;
   gap: 6%;
-  transition: 0.2s;
 }
 
 
 nav > ul > *:hover {
-  transform: scale(1.05); /* Slightly scale up the item */
-  text-decoration: underline; /* Add underline on hover */
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
-
 nav > ul > * {
-  text-decoration: none; /* Remove underline initially */
-  color: #0D0E43; /* Dark gray text color */
-  transition: transform 0.2s ease; /* Smooth scaling transition */
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
 }
 
