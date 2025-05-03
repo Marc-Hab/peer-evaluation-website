@@ -72,7 +72,7 @@
   gap: 20px;
 }
 
-.buttons > * {
+.main-teamcreation .buttons > * {
   color: #cc813f;
   background-color: #464545;
   width: 100px;

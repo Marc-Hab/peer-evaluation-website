@@ -101,16 +101,16 @@ export default function MainTeacher() {
 
   return (
     <main className="main-teacher">
-      <div className="instructor">
-        <h2 style={{ marginTop: "50px" }}> Teams Created:</h2>
+      <div>
+        <h2 style={{ marginTop: "50px" }}>Current Teams</h2>
         <div className="buttons">
           <button style={{ marginTop: "-20px" }} data-testid="Create Button" onClick={create_team}>
             {" "}
-            Create Team +{" "}
+            Create New Team +{" "}
           </button>
           <button style={{ marginTop: "-20px" }} onClick={downloadTeams} data-testid="Download button">
             {" "}
-            Download Teams ↓{" "}
+            Export Teams ↓{" "}
           </button>
         </div>
       </div>
@@ -154,7 +154,7 @@ function Team({ team, students }) {
     }
   };
   return (
-    <div className="instructor" data-testid={team.name}>
+    <div data-testid={team.name}>
       <ul style={{ marginTop: "20px" }}>
       <table style={{ marginBottom: "20px" }}>
         <thead>
@@ -188,9 +188,8 @@ function Team({ team, students }) {
         <div className="del-edit">
           <button className="more" data-testid={team.name + " more button"} onClick={() => team_info(team, students)}>
             {" "}
-            MORE
+            More
           </button>
-          <button className="edit">EDIT</button>
           <button
             className="delete"
             data-testid={team.name + " delete button"}
@@ -198,7 +197,7 @@ function Team({ team, students }) {
               HandleDeleteTeam(team.id);
             }}
           >
-            DELETE
+            Delete
           </button>
         </div>
       </ul>
@@ -207,7 +206,7 @@ function Team({ team, students }) {
 }
 
 function NoTeam() {
-  return <h1>No Teams Created</h1>;
+  return <h1>No Teams</h1>;
 }
 
 Team.propTypes = {
