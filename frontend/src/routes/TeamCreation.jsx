@@ -41,22 +41,21 @@ export default function TeamCreation() {
   };
   return (
     <main className="main-teamcreation">
+      <h2>Team Information</h2>
       <form className="students" onSubmit={submitHandler}>
-        <div className="top-display">
-          <h2>Team Name:</h2>
-          <div className="team-name">
-            <input
+        <div className="fields">
+          <label>Team Name</label>
+          <input
               type="text"
               name="name"
               maxLength="60"
               placeholder="Enter the team name"
               pattern=".*\S.*"
               required
-            ></input>
-          </div>
-        </div>
-        <h2>Select The Team Members:</h2>
-        {students.length ? (
+          ></input>
+
+          <label>Select Team Members</label>
+          {students.length ? (
           <>
             <ul>
               {students.map((student, index) => (
@@ -68,24 +67,21 @@ export default function TeamCreation() {
                       value={student.email}
                       data-testid={student.id}
                     />
-                    {student.name}
+                    <span className="student-name">{student.name}</span>
+                    <span className="student-email">✉️ {student.email}</span>
                   </label>
                 </li>
               ))}
             </ul>
-            <div className="buttons">
-              <button onClick={back}>Cancel</button>
-              <button type="submit">Confirm</button>
-            </div>{" "}
+            <input type="submit" value="Create Team" />
           </>
         ) : (
           <>
-            <h1 data-testid = "emptyStudents">No Students Currently Available</h1>
-            <div className="buttons">
-              <button onClick={back}>Back</button>
-            </div>
+            <span data-testid = "emptyStudents">No Students Currently Available</span>
+            <button onClick={back}>Back</button>
           </>
         )}
+        </div>
       </form>
     </main>
   );

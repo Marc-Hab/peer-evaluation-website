@@ -1,7 +1,6 @@
 import "../css/main-teacher.css";
 import PropTypes from "prop-types";
 import { jwtDecode } from "jwt-decode";
-import copy from "../assets/copy.svg";
 
 import { fetchProtectedAPI } from "../functions/apiinterface";
 import { useState, useEffect } from "react";
@@ -59,11 +58,6 @@ function Team({ team, students }) {
         <h3>{team.name}</h3>
         {students.map((student) => (
           <div className="team-mate-div" key={student.id}>
-            <img
-              className="copy-logo"
-              src={copy}
-              onClick={() => handleCopyClick(student.email)}
-            />
             <li>{student.name}</li>
           </div>
         ))}

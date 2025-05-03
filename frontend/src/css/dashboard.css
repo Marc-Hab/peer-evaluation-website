@@ -1,112 +1,114 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Poppins', sans-serif;
+  max-width: 80vw;
+  margin: 20px auto;
+}
+
 .dashboard h2 {
-  color: orange;
-  margin: 30px 0 0 30px;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
 }
 
-.dashboard h3 {
-  color: orange;
+.dashboard .star-table {
+  color: black;
+  border-collapse: separate; /* Use separate borders for gaps */
+  border-spacing: 40px 20px;
+  border: solid 10px #E6D8C8;
+}
+
+.dashboard .star-table tr th {
   font-size: 16px;
-  font-weight: 400;
-}
-
-.dashboard h4 {
-  color: orange;
-  font-size: 20px;
-  margin: 30px 90px;
+  font-weight: 300;
+  text-align: left;
 }
 
 .dashboard .star-row {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 20px;
 }
 
-.dashboard .star-row span {
-  color: orange;
+.dashboard h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 50px;
 }
 
-.dashboard .star-table {
-  border-collapse: separate; /* Use separate borders for gaps */
-  border-spacing: 15px;
-  margin-left: 75px;
-}
-
-.dashboard .student-table th,
-.dashboard .student-table td {
-  text-wrap: wrap;
-  text-align: center;
-  width: 20%; /* 100% / 5 columns = 20% width for each column */
-  padding: 10px;
-  border: 1px solid black;
-}
-
-.dashboard .student-table th {
-  color: orange;
-}
-
-.dashboard .star-table tr th {
-  color: orange;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
+.dashboard .student-feedback {
+  border: solid 10px #E6D8C8;
 }
 
 .dashboard .student-table {
-  width: 100%;
   max-width: 65vw; /* Set the maximum width for the table */
   margin: 0 auto; /* Center the table if it's smaller than the screen width */
   table-layout: fixed; /* Ensures each column has equal width */
   border-collapse: collapse;
 }
 
+.dashboard .student-table th,
 .dashboard .student-table td {
-  color: rgb(237 229 229);
+  text-wrap: wrap;
+  text-align: center;
+  width: 16.66%; /* 100% / 5 columns = 20% width for each column */
+  padding: 10px;
+  border: 1px solid #E6D8C8;
+}
+
+.dashboard .student-table th {
+  color: black;
+  font-weight: 300;
+}
+.dashboard .student-table td {
+  color: black;
+  font-weight: 300;
 }
 
 .dashboard .student-table thead tr {
-  background-color: #464545;
+  background-color: #F9F1E7;
 }
 
 .dashboard .student-table tbody .even {
-  background-color: #a8a8a8;
+  background-color: white;
 }
 
 .dashboard .student-table tbody .odd {
-  background-color: #464545;
+  background-color: #F9F1E7;
+}
+
+.dashboard .student-feedback > h4 {
+  margin-left: 15px;
+  font-size: 16px;
+  width: fit-content;
+  border-bottom: solid 1px #DEDEDE;
 }
 
 .dashboard textarea {
   display: block;
-  background-color: #a8a8a8;
-  font-size: 15px;
-  resize: none;
-  min-height: 150px;
+  border: none;
   width: 100%;
+
+
+  height: auto;
   max-width: 65vw;
   margin: 0 auto;
-  padding: 10px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  
+  text-wrap: wrap;
+  text-align: justify;
+  
+  padding: 5px 25px;
+  margin-bottom: 10px;
 }
 
 .dashboard textarea:focus {
   outline: none; /* Removes the default outline */
-}
-
-.dashboard button {
-  color: #cc813f;
-  background-color: #464545;
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-  border: none;
-  margin: 10px 90px;
-}
-
-.dashboard button:hover {
-  background-color: #cc813f;
-  color: #464545;
-}
-
-.dashboard button:active {
-  opacity: 0.7;
 }

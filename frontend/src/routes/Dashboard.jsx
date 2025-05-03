@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../css/dashboard.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { fetchProtectedAPI } from "../functions/apiinterface";
 
 function StarScore({ average }) {
@@ -80,6 +80,7 @@ function StudentTable({ assessments }) {
     <table className="student-table">
       <thead>
         <tr>
+          <th></th>
           <th>Cooperation</th>
           <th>Conceptual Contribution</th>
           <th>Practical Contribution</th>
@@ -91,6 +92,7 @@ function StudentTable({ assessments }) {
         {assessments.map((assessment, index) => {
           return (
             <tr key={assessment.id} className={index % 2 == 0 ? "even" : "odd"}>
+              <td>Feedback #{index + 1}</td>
               <td>{assessment.cooperation_score}</td>
               <td>{assessment.conceptual_contribution_score}</td>
               <td>{assessment.practical_contribution_score}</td>
@@ -117,17 +119,30 @@ StudentTable.propTypes = {
 }
 
 function StudentComments({ assessments }) {
+  const textareaRef = useRef(null);
+
+  useEffect(() => {
+    const textarea = textareaRef.current;
+    if (textarea) {
+      textarea.style.height = "auto"; // Reset height
+      textarea.style.height = textarea.scrollHeight + "px"; // Set to content height
+    }
+  }, [assessments]); // Trigger when assessments change
+
+
   return (
     <textarea
+      ref={textareaRef}
       id="comments"
       name="comments"
       maxLength="500"
       cols="100"
       value={assessments
-        .map((assessment) => `• ${assessment.comments}`)
+        .map((assessment) => `> ${assessment.comments}`)
         .join("\n")}
       readOnly
       tabIndex="-1"
+      style={{ overflow: "hidden", resize: "none" }}
     ></textarea>
   );
 }
@@ -143,10 +158,12 @@ StudentComments.propTypes = {
 function StudentDash({ student }) {
   return (
     <>
-      <h4>{student.name}:</h4>
-      <StudentTable assessments={student.assessments} />
-      <h4>Comments Received:</h4>
-      <StudentComments assessments={student.assessments} />
+      <h4>{student.name} - Feedback Overview</h4>
+      <div className="student-feedback">
+        <StudentTable assessments={student.assessments} />
+        <h4>Comments Received</h4>
+        <StudentComments assessments={student.assessments} />
+      </div>
     </>
   );
 }
@@ -232,10 +249,10 @@ export default function Dashboard() {
 
   return (
     <main className="dashboard">
-      <h2>{team.name}</h2>
+      <h2>{team.name} - Feedback Overview</h2>
+      <h4>Overall Score</h4>
       <StarTable team_members={team_members} />
       <StudentsDash students={team_members} />
-      <button onClick={() => navigate("/teacher/home")}>Back</button>
     </main>
   );
 }
