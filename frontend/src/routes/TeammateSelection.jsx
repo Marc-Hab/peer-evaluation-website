@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import "../css/team-creation.css";
-
+import "../css/main-teamselection.css";
 import {fetchProtectedAPI} from "../functions/apiinterface";
 import { useNavigate } from "react-router-dom";
 
@@ -36,9 +35,10 @@ export default function TeammateSelection() {
   };
 
   return (
-    <main className="main-teamcreation">
+    <main className="main-teamselection">
+      <h2>Team Information</h2>
       <form className="students" onSubmit={submitHandler}>
-        <h2>Select a Team Member to Evaluate:</h2>
+        <label>Select a Team Member to Evaluate</label>
         {students.length ? (
           <>
             <ul>
