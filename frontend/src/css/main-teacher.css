@@ -88,11 +88,11 @@
 }
 
 .main-teacher .more{
-  color: #B88E2F;
-  border: solid 1px #B88E2F;
+  color: #B0A294;
+  border: solid 1px #B0A294;
 }
 
 .main-teacher .more:hover{
-  background-color: #B88E2F;
+  background-color: #B0A294;
   color: white;
 }

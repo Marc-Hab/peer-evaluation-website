@@ -12,91 +12,58 @@
 .main-teamselection form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
     border: solid 10px #E6D8C8;
 }
-  
-  .main-teamcreation .fields {
-    display: flex;
-    flex-direction: column;
-    padding: 15px 15px 0 15px;
-  }
-  
-  .main-teamcreation .fields > label {
+
+.main-teamselection form label {
     font-size: 13px;
     font-weight: 500;
-  }
-  
-  .main-teamcreation .fields input[type="text"] {
-    font-size: 13px;
-    padding-left: 5px;
-    border: solid 1px #9F9F9F;
-    border-radius: 5px;
-    height: 45px;
-  }
-  
-  .main-teamcreation .fields input[type="text"]:focus {
-    border: solid 2px #c4b29c;
-    outline: none;
-  }
-  
-  .main-teamcreation .fields [type="text"] {
-    font-family: 'Poppins', sans-serif;
-    width: 400px;
-  }
-  
-  .main-teamcreation input[type="text"]{
-    margin-bottom: 20px;
-  }
-  
-  .main-teamcreation ul {
+}
+
+.main-teamselection ul {
     list-style-type: none;
-  }
-  
-  .main-teamcreation ul li {
-    height: 25px;
-    padding: 5px 0;
-  }
-  
-  .main-teamcreation ul li label {
+    margin-top: 3px;
+}
+
+.main-teamselection ul li {
+    width: 400px;
+    padding: 2px 0px;
+}
+
+.main-teamselection ul li label {
     display: grid;
     grid-template-columns: auto 1fr 2fr; /* checkbox, name, email */
     align-items: center;
     gap: 10px;
     font-weight: 200;
     font-size: 14px;
-  }
-  
-  .main-teamcreation ul li input {
-    margin-right: 15px;
-    margin-left: 10px;
-  }
-  
-  .main-teamcreation input[type="submit"],
-  .main-teamcreation button {
+
+    padding-left: 10px;
+}
+
+.main-teamselection button {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     padding: 10px 50px;
     width: fit-content;
-    margin: 25px 0 30px 0;
+    margin: 30px 0 10px 0;
     border: solid 1pt black;
     background-color: white;
     border-radius: 10px;
     transition: 0.3s;
     align-self: center;
-  }
+}
   
-  .main-teamcreation input[type="submit"]:hover,
-  .main-teamcreation button:hover {
+.main-teamselection button:hover {
     cursor: pointer;
     transform: scale(1.05);
-  }
+}
   
-  .main-teamcreation input[type="submit"]:active,
-  .main-teamcreation button:active {
+.main-teamselection button:active {
     opacity: 0.7;
-  }
+}
   

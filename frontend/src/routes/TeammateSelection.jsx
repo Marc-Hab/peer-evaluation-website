@@ -55,22 +55,17 @@ export default function TeammateSelection() {
                       data-testid={student.name}
                       required
                     />
-                    {student.name}
+                    <span>{student.name}</span>
                   </label>
                 </li>
               ))}
             </ul>
-            <div className="buttons">
-              <button onClick={back}>Cancel</button>
-              <button type="submit">Confirm</button>
-            </div>{" "}
+            <button type="submit">Confirm</button>
           </>
         ) : (
           <>
-            <h1 data-testid="emptyStudents">No Students to Assess</h1>
-            <div className="buttons">
-              <button onClick={back}>Back</button>
-            </div>
+            <h3 data-testid="emptyStudents">You have assessed all your teammates.</h3>
+            <button onClick={back}>Back</button>
           </>
         )}
       </form>

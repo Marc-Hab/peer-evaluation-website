@@ -19,6 +19,7 @@
   border-collapse: separate; /* Use separate borders for gaps */
   border-spacing: 40px 20px;
   border: solid 10px #E6D8C8;
+  margin-bottom: 50px;
 }
 
 .dashboard .star-table tr th {
@@ -37,7 +38,7 @@
   color: black;
   font-size: 20px;
   font-weight: 300;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .dashboard .student-feedback {
@@ -45,7 +46,8 @@
 }
 
 .dashboard .student-table {
-  max-width: 65vw; /* Set the maximum width for the table */
+  min-width: 65vw; /* Set the maximum width for the table */
+  max-width: 80vw;
   margin: 0 auto; /* Center the table if it's smaller than the screen width */
   table-layout: fixed; /* Ensures each column has equal width */
   border-collapse: collapse;
@@ -95,7 +97,8 @@
 
 
   height: auto;
-  max-width: 65vw;
+  min-width: 65vw; /* Set the maximum width for the table */
+  max-width: 80vw;
   margin: 0 auto;
 
   font-family: 'Poppins', sans-serif;

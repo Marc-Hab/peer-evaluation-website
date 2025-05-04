@@ -1,46 +1,54 @@
 .instructors-container {
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif;
+
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
   
-  .instructors-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+.instructors-header {
+  text-align: center;
+}
   
-  .instructors-header h1 {
-    font-size: 2.5rem;
-    color: rgba(204 129 63 / 100%);
-  }
+.instructors-header h1 {
+  padding-top: 20px;
+  font-weight: 600;
+}
   
-  .instructors-header p {
-    font-size: 1.2rem;
-    color: rgba(70 69 69 / 100%);
-  }
+.instructors-header p {
+  text-wrap: wrap;
+  font-size: 1.2rem;
+  color: rgba(70 69 69 / 100%);
+}
   
-  .instructors-list {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+.instructors-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
   
-  .instructor-card {
-    background: #fff;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0 0 0 / 10%);
-    transition: transform 0.2s ease-in-out;
-  }
+.instructor-card {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0 0 0 / 10%);
+  transition: transform 0.2s ease-in-out;
+
+  border: solid 10px #E6D8C8;
+}
   
   .instructor-card:hover {
     transform: translateY(-5px);
   }
   
-  .instructor-card h2 {
-    font-size: 1.5rem;
-    color: #2980b9;
-  }
+.instructor-card h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
   
   .instructor-card p {
     font-size: 1rem;
