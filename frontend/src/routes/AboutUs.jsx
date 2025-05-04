@@ -43,11 +43,12 @@ export default function AboutUs() {
           </div>
           <div className="team-member">
             <h3>Marchelino Habchi</h3>
-            <p className="title">Emotional Supporter</p>
+            <p className="title">Full Stack Developer</p>
             <div className="img-desc">
               <img src={marc} alt="Team Member" />
-              <p className="desc">Marchelino brings empathy and a listening ear to the team, creating a positive and supportive work environment.
-                Their interpersonal skills help the team navigate stress and maintain morale.</p>
+              <p className="desc">Marchelino is a versatile full stack developer who brings ideas to life from mockups to deployment.
+                With a keen eye for design and a strong command of code, he bridges frontend creativity with 
+                backend functionality to deliver polished, user-friendly experiences.</p>
             </div>
           </div>
           <div className="team-member">
