@@ -129,3 +129,8 @@ Marchelino is a versatile full stack developer who brings ideas to life from moc
 ## 📄 License
 
 This project is licensed under the [MIT License](./LICENSE). You are free to use, modify, and distribute the code with attribution.
+
+### Image Usage
+
+All images used in this project are from [Unsplash](https://unsplash.com) and are licensed under the [Unsplash License](https://unsplash.com/license).
+
