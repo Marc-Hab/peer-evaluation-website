@@ -2,7 +2,7 @@ import "../css/header.css";
 import logo from "../assets/header.png"
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../config/useAuth";
-import homeIcon from "../pictures/home.png";
+import homeIcon from "../assets/home.png";
 import { jwtDecode } from "jwt-decode";
 
 export default function Header() {

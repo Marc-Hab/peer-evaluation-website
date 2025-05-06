@@ -1,10 +1,10 @@
 import "../css/about-us.css"; // Optional for styling
-import dara from "../pictures/dara.jpg"
-import oren from "../pictures/oren.jpg"
-import mathieu from "../pictures/mathieu.jpg";
-import brandon from "../pictures/brandon.jpg";
-import daniel from "../pictures/daniel.jpg";
-import marc from "../pictures/marc.jpg";
+import dara from "../assets/dara.jpg"
+import oren from "../assets/oren.jpg"
+import mathieu from "../assets/mathieu.jpg";
+import brandon from "../assets/brandon.jpg";
+import daniel from "../assets/daniel.jpg";
+import marc from "../assets/marc.jpg";
 
 export default function AboutUs() {
   return (
