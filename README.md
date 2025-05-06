@@ -40,8 +40,8 @@ Students evaluate each other across four dimensions using a 5-point scale with o
 - 📸 **Sign-Up Page**
   ![signup-placeholder](media/signup.png)
 
-- 📸 **Team Creation Dashboard**
-  ![teams-placeholder](media/teams.png)
+- 📸 **Team Creation**
+  ![teams-placeholder](media/teams.gif)
 
 - 📸 **Peer Evaluation Form**
   ![feedback-placeholder](media/feedback.png)
