@@ -1,6 +1,9 @@
 nav {
-  background-color: rgba(168 168 168 / 100%);
+  background-color: #E6D8C8;
   padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
 }
 
 nav > ul {
@@ -9,38 +12,17 @@ nav > ul {
   justify-content: center;
   list-style-type: none;
   gap: 6%;
-  transition: 0.2s;
 }
 
-nav li:hover {
+
+nav > ul > *:hover {
+  transform: scale(1.05);
   text-decoration: underline;
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 nav > ul > * {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  color: rgb(34 33 33);
-  transition: 0.2s;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
 }
 
-nav > ul > *:hover {
-  text-decoration-color: rgb(34 33 33);
-  transform: scale(1.05);
-}
-
-nav > ul > *::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: rgb(34 33 33); 
-  transition: width 0.7s ease; 
-}
-
-nav > ul > *:hover::after {
-  width: 100%;
-}

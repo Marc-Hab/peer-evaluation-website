@@ -43,10 +43,10 @@ export default function Evaluation() {
 
   return (
     <main className="main-eval">
-      <h2>Teammate Evaluation:</h2>
+      <h1>Teammate Evaluation</h1>
       <p>
         You are currently evaluating the performance of{" "}
-        <span>{student.name}</span>.
+        <span className="student-name">{student.name}</span>.
       </p>
       <form onSubmit={submitHandler}>
         <h2>Cooperation</h2>
@@ -111,7 +111,6 @@ export default function Evaluation() {
           cols="100"
           data-testid ="comments"
         ></textarea>
-        <button onClick={back}>Cancel</button>
         <button type="submit">Submit</button>
       </form>
     </main>

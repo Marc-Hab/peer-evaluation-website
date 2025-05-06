@@ -10,7 +10,8 @@ export default function Header() {
 
   return (
     <header>
-      <img src={logo} alt="Flowers in Chania" className="logo"></img>
+      <img src={logo} alt="Peerly Logo" className="logo"></img>
+      <span className="website_name">Peerly</span>
       {token ? <LoggedIn /> : <LoggedOut />}
     </header>
   );
@@ -27,11 +28,11 @@ function LoggedOut() {
   return (
     <div className="topright-display">
       <span className="sign-up" onClick={signupNav}>
-        SIGN UP
+        Sign Up
       </span>
 
       <span className="login" onClick={loginNav}>
-        LOGIN
+        Log In
       </span>
     </div>
   );
@@ -53,7 +54,7 @@ function LoggedIn() {
       <img src={homeIcon} alt="home" onClick={homeNav} />
 
       <span className="logout" onClick={logout}>
-        LOG OUT
+        Log Out
       </span>
     </div>
   );

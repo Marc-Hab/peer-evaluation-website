@@ -39,26 +39,24 @@ export default function MainLogin() {
   return (
     <>
       <main className="main-login">
-        <h2>LOG IN</h2>
+        <h2>Login Credentials</h2>
 
         <form onSubmit={submitHandler} method="post">
           <div className="fields">
+          <label>User Type</label>
             <div className="usertype">
-              <label>User Type: </label>
-              <div>
-                <label>
-                  Student
-                  <input type="radio" name="type" value="student" required />
-                </label>
+              <label>
+                <input type="radio" name="type" value="student" required />
+                Student
+              </label>
 
-                <label>
-                  Teacher
-                  <input type="radio" name="type" value="teacher" required />
-                </label>
-              </div>
+              <label>
+                <input type="radio" name="type" value="teacher" required />
+                Teacher
+              </label>
             </div>
 
-            <label>Email Address:</label>
+            <label>Email Address</label>
             <input
               type="email"
               id="email"
@@ -67,7 +65,7 @@ export default function MainLogin() {
               required
             />
 
-            <label>Password:</label>
+            <label>Password</label>
             <input
               type="password"
               id="password"
@@ -78,10 +76,10 @@ export default function MainLogin() {
           </div>
 
           <span onClick={signupNav} title="Click here to sign up">
-            Don &#39; t have an account?
+            Don&#39;t have an account?
           </span>
 
-          <input type="submit" value="Log in" />
+          <input type="submit" value="Log In" />
         </form>
       </main>
     </>

@@ -1,7 +1,6 @@
-import "../css/main-teacher.css";
+import "../css/main-student.css";
 import PropTypes from "prop-types";
 import { jwtDecode } from "jwt-decode";
-import copy from "../assets/copy.svg";
 
 import { fetchProtectedAPI } from "../functions/apiinterface";
 import { useState, useEffect } from "react";
@@ -36,10 +35,8 @@ export default function MyTeam() {
   }, []);
 
   return (
-    <main className="main-teacher">
-      <div className="instructor">
-        <h2 style={{ marginTop: "50px" }}> Your Team:</h2>
-      </div>
+    <main className="main-student">
+      <h2> Your Team</h2>
       {team ? <Team team={team} students={students} /> : <NoTeam />}
     </main>
   );
@@ -54,20 +51,17 @@ function Team({ team, students }) {
   const select = () => navigate("/student/select-teammate");
 
   return (
-    <div className="instructor" data-testid={team.name}>
-      <ul style={{ marginTop: "20px" }}>
+    <div className="team-info" data-testid={team.name}>
+      <ul>
         <h3>{team.name}</h3>
-        {students.map((student) => (
-          <div className="team-mate-div" key={student.id}>
-            <img
-              className="copy-logo"
-              src={copy}
-              onClick={() => handleCopyClick(student.email)}
-            />
-            <li>{student.name}</li>
-          </div>
+        {students.map((student, index) => (
+          <li key={student.id}>
+            <span className="list-number">{index + 1}.</span>
+            <span className="student-name">{student.name}</span>
+            <span className="student-email">✉️ {student.email}</span>
+          </li>
         ))}
-        <div className="del-edit">
+        <div className="button-wrapper">
           <button className="evaluate" onClick={select}>
             Evaluate a Team Member
           </button>

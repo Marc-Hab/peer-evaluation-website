@@ -1,133 +1,122 @@
 /* General Layout */
 .about-us-container {
-    font-family: Arial, sans-serif;
-    padding: 40px;
-    max-width: 60vw;
-    margin: 0 auto;
-    color: #333;
-  }
-  
-  .about-us-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .about-us-header h1 {
-    font-size: 2.5rem;
-    color: rgba(204 129 63 / 100%);
-    margin-bottom: 10px;
-  }
-  
-  .about-us-header p {
-    font-size: 1.2rem;
-    color: rgba(70 69 69 / 100%);
-    margin-top: 10px;
-  }
-  
-  /* Content Section */
-  .about-us-section h2 {
-    font-size: 2rem;
-    color: rgba(204 129 63 / 100%);
-    margin-top: 40px;
-  }
-  
-  .about-us-section p {
-    font-size: 1.1rem;
-    color: rgba(70 69 69 / 100%);
-    line-height: 1.6;
-    margin-top: 10px;
-    text-wrap: wrap;
-    max-width: 60vw;
-  }
-  
-  /* Team Section */
-  .team-members {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  .team-member {
-    text-align: center;
-    margin: 20px 0;
-    flex: 1;
-    background-color: #ecf0f1;
-    height: 250px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0 0 0 / 10%);
-    transition: 2s;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
 
-  .team-member-img {
-    position: absolute;
-    width: 15%;
-    left: 42.5%;
-    transition: 2s;
-  }
-
-  .team-member:hover .team-member-img{
-    transform: translateX(-200px);
-  }
-
-  .team-member-desc{
-    position: absolute;
-    height: 220px;
-    width: 25%;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-
-  .desc {
-    color: black;
-  }
-
-  .team-member:hover .team-member-desc{
-    opacity: 1;
-  }
-
-  .team-member h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-  }
-
-  .team-member p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-    margin-top: 10px;
-  }
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
   
-  .team-member img {
-    width: 150px;
-    height: 150px;
-  }
+.about-us-header {
+  text-align: center;
+}
   
-  /* Footer Section */
-  .about-us-footer {
-    text-align: center;
-    margin-top: 50px;
-  }
+.about-us-header h1 {
+  padding-top: 20px;
+  font-weight: 600;
+}
   
-  .about-us-footer h3 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-  }
+.about-us-header p {
+  text-wrap: wrap;
+  font-size: 1.2rem;
+  color: rgba(70 69 69 / 100%);
+}
   
-  .about-us-footer a {
-    color: rgba(204 129 63 / 50%);
-    text-decoration: none;
-    font-weight: bold;
-  }
+/* Content Section */
+.about-us-section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 40px;
+}
   
-  .about-us-footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .team-member .title{
-    text-wrap: nowrap;
-  }
+.about-us-section p {
+  font-size: 1.1rem;
+  color: rgba(70 69 69 / 100%);
+  line-height: 1.6;
+  margin-top: 10px;
+  text-wrap: wrap;
+  max-width: 70vw;
 
-  .team-member .desc {
-    text-align: justify;
-  }
+  text-align: justify;
+}
+
+/* Team Section */
+.team-members {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-top: 17px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 3px 12px;
+  height: 250px;
+  
+  border: solid 10px #E6D8C8;
+  box-shadow: 0 2px 8px rgba(0 0 0 / 10%);
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member .img-desc {
+  display: flex;
+  align-items: center;
+}
+.team-member .desc{
+  max-height: 150px;
+  width: 100%;
+
+  font-size: 15px;
+  padding-left: 12px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: 300;
+  text-wrap: nowrap;
+}
+
+.team-member p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-top: -8px;
+  text-align: justify;
+  font-weight: 300;
+}
+  
+.team-member img {
+  width: 150px;
+  height: 150px;
+}
+  
+
+/* Footer Section */
+.about-us-footer {
+  text-align: center;
+  margin: 30px 0;
+}
+  
+.about-us-footer h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+  
+.about-us-footer a {
+  color: rgba(204 129 63 / 50%);
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.about-us-footer a:hover {
+  text-decoration: underline;
+}

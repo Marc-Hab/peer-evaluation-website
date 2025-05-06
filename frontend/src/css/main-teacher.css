@@ -1,190 +1,98 @@
-button {
-  transition: 0.3s;
-}
-
-button:hover{
-  transform: scale(1.05);
-}
-
-.main-teacher ul li {
-  list-style: none;
-}
-
-.main-teacher h1 {
-  text-align: center;
-}
-
-.instructor {
-  width: 1200px;
+.main-teacher {
+  font-family: 'Poppins', sans-serif;
   max-width: 80vw;
   margin: 20px auto;
 }
 
-.header {
-  width: 1200px;
-  margin: 0 auto;
+.main-teacher h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
 }
 
-.instructor .top-display {
+.main-teacher button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  background-color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.main-teacher button:hover{
+  transform: scale(1.1);
+}
+
+.main-teacher button:active{
+  opacity: 0.7;
+}
+
+.main-teacher .buttons {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: 20px;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-.instructor h2 {
-  color: #cc813f;
-  font-weight: 800;
-  margin-right: 20px;
+.main-teacher .buttons > button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: solid 1px black;
 }
 
-.instructor h3 {
-  color: #fff;
-  font-weight: 800;
-  margin: 20px;
-}
-
-.instructor .top-display .team-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #464545;
-  height: 35px;
-  width: 800px;
-}
-
-.instructor .top-display .team-name input {
-  border: none;
-  border-bottom: solid #a8a8a8 1px;
-  background-color: #464545;
-  height: 32px;
-  width: 750px;
-  color: white;
-  font-size: 12pt;
-}
-
-.instructor ul {
-  background-color: #464545;
-  height: auto;
-  overflow: auto;
-  margin-bottom: 20px;
+.main-teacher ul {
   padding-bottom: 20px;
-}
-
-.instructor ul li {
-  margin: 0 50px;
-  color: #fff;
-}
-
-.instructor .buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.buttons > * {
-  color: #cc813f;
-  background-color: #464545;
-  width: fit-content;
-  padding: 5px 10px;
-  height: 30px;
-  cursor: pointer;
-  border: none;
-}
-
-.instructor .buttons button:hover {
-  background-color: #cc813f;
-  color: #464545;
-}
-
-.instructor .buttons button:active {
-  opacity: 0.7;
-}
-
-.del-edit {
-  margin-right: 20px;
-}
-
-/* detele and edit */
-.instructor .del-edit {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.del-edit > .delete,
-.del-edit > .edit,
-.del-edit > .more {
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-  border: none;
-}
-
-.instructor .del-edit button:active {
-  opacity: 0.7;
-}
-
-.main-teacher .delete {
-  background-color: red;
-  color: #fff;
-}
-
-.main-teacher .edit {
-  background-color: gray;
-  color: #fff;
-}
-
-.main-teacher .more {
-  background-color: gray;
-  color: #fff;
-}
-
-.main-teacher .evaluate {
-  background-color: #cc813f;
-  color: #fff;
-  margin-right: 20px;
-  width: 170px;
-  height: 30px;
-  cursor: pointer;
-  border: none;
+  border: solid 10px #E6D8C8;
 }
 
 .main-teacher table {
-  color: white;
+  color: black;
   margin: 0 auto;
   width: 100%;
   padding: 25px 20px 0;
   border-collapse: separate;
   border-spacing: 0 7px;
+
+}
+
+.main-teacher table thead th {
+  text-wrap: wrap;
+  padding: 0 5px 15px;
+  font-weight: 600;
 }
 
 .main-teacher table tbody td {
-  border-bottom: 2px solid white;
+  border-bottom: double 2px black;
   text-align: center;
   text-wrap: wrap;
- }
+  font-size: 15px;
+}
 
- .main-teacher table thead th {
-  text-wrap: wrap;
-  padding: 0 5px 15px;
- }
-
- .copy-logo{
-  width : 25px;
-  height : 25px;
- }
-
- .copy-logo:hover{
-  cursor: pointer;
- }
-
- .team-mate-div {
+/*delete and edit buttons*/
+.main-teacher .del-edit {
   display: flex;
- }
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 20px;
+}
 
- .team-mate-div .copy-logo{
-  margin-left: 50px;
- }
+.main-teacher .delete {
+  color: red;
+  border: solid 1px red;
+}
+
+.main-teacher .delete:hover{
+  background-color: red;
+  color: white;
+}
+
+.main-teacher .more{
+  color: #B0A294;
+  border: solid 1px #B0A294;
+}
+
+.main-teacher .more:hover{
+  background-color: #B0A294;
+  color: white;
+}
