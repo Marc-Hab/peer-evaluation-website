@@ -1,59 +1,131 @@
-# Peer Assessment Application - SOEN 341
+# Peerly – Peer Assessment Platform
 
-## Objective
-The purpose of this project is to familiarize ourselves with software development. To achieve this, we will work as a team and combine our skills to deliver a finished product. Following the Agile process, the project is divided into four sprints, and at the end of each sprint, we are responsible for demonstrating our work.
+> Empowering students and instructors with transparent, structured, and meaningful peer feedback.
 
-## Description of the Project
-The Peer Assessment System will be a web-based platform designed to facilitate the evaluation of student contributions. Each student will assess the performance and participation of their teammates in their group. There will also be a section for instructors, allowing them to view evaluations and form groups while tracking the overall score of each group. 
+## 🎯 Objective
 
-Each student and instructor must authenticate themselves by providing an email and password to log into their account. After logging in, they will access the assessment page. The assessment will be based on four dimensions: **Cooperation**, **Conceptual Contribution**, **Practical Contribution**, and **Work Ethic**. Each dimension will be rated on a 7-point scale, with an additional comment section for more detailed feedback.
+Peerly is a web-based platform designed to simplify peer evaluations within student teams. It provides a space for honest, structured feedback while giving instructors visibility into team dynamics and individual contributions.
 
-### Evaluation Dimensions
-1. **Cooperation**: Evaluate how well a team member collaborates with others by attending meetings, communicating, and being willing to help.
-   
-2. **Conceptual Contribution**: Assess the quality and creativity of the ideas a team member brings to the project, including problem-solving skills and innovative thinking.
-
-3. **Practical Contribution**: Measure the tangible work delivered by a team member, such as coding, designing, conducting research, reviewing others' work, and providing feedback.
-
-4. **Work Ethic**: Evaluate the respect team members have towards each other, including punctuality and overall commitment throughout the project.
-
-## Problems That Might Arise
-
-### Problem: Bias in Peer Evaluation
-There might be unfair ratings based on personal relationships or group conflicts.
-
-**Solution**: The assessment will be anonymous, which will help reduce bias.
+This project was developed as part of a software engineering course (SOEN 341) using Agile methodology across four sprints.
 
 ---
 
-### Problem: Confusion with the System
-Students or instructors might find it difficult to navigate the platform.
+## 🌟 Features
 
-**Solution**: We will ensure that the platform is user-friendly, with clear instructions for both instructors and students.
+- 👤 **Role-based Access**:
+  - **Students** can submit evaluations for their teammates.
+  - **Teachers** can create teams and view peer feedback for each student.
+
+- ✅ Simple, user-friendly interface.
+- 🔒 JWT-based authentication system.
+- 💬 Clear and organized peer feedback submissions.
 
 ---
 
-### Problem: Managing Peer Assessments for Many Groups
-This could pose challenges for instructors.
+## 🧪 Evaluation Dimensions
 
-**Solution**: Implement data visualization, providing visual dashboards or summary reports of group performance.
+Students evaluate each other across four dimensions using a 5-point scale with optional comments:
 
-## Team Members and Roles
+1. **Cooperation** – Collaboration, communication, participation in meetings.
+2. **Conceptual Contribution** – Ideas, problem-solving, creativity.
+3. **Practical Contribution** – Tangible work delivered: code, design, research, etc.
+4. **Work Ethic** – Punctuality, reliability, and team respect.
 
-**Dara Dadgar (40228407/DaraDadgar)** - _Product Owner/SQA Engineer/UX Designer_  
-Experienced in project leadership and management, with a strong background in software quality assurance (SQA) testing and user experience (UX) design.
+---
 
-**Oren Argot (40224072/Ouchy123)** - _Frontend Developer/JavaScript Developer_  
-Frontend Developer/JavaScript Developer responsible for the design of the interface and connecting the front end to the backend. Calling APIs.
+## 🖼️ Screenshots / GIFs
 
-**Daniel Secelean (40227919/Daniel Secelean)** - _Backend Developer/Cloud Engineer_  
-Backend Developer/Cloud Engineer responsible for designing scalable APIs and deploying secure cloud infrastructure.
+> _Add screenshots or screen recordings to give users a visual idea of how Peerly works._
 
-**Mathieu Phan (40176824/Meijirice)** - _Backend Developer/API Developer_  
-Building backend routes for API calls and database models.
+- 📸 **Sign-Up Page**
+  ![signup-placeholder](media/signup.png)
 
-**Brandon Phelps (40215190/brandonphelps1212)** - _Frontend Developer/UX Designer_  
-Experienced in creating intuitive user interfaces with technical expertise in web development, ensuring seamless and user-friendly experiences.
+- 📸 **Team Creation Dashboard**
+  ![teams-placeholder](media/teams.png)
 
-**Marchelino Habchi (40259668/Marc-Hab)** - _Frontend Developer/CSS Developer_  
-Transforming design mockups into responsive web interfaces using clean, modular CSS. Focuses on layout, styling, and ensuring consistency with the design specifications.
+- 📸 **Peer Evaluation Form**
+  ![feedback-placeholder](media/feedback.png)
+
+- 📸 **Teacher Review Panel**
+  ![teacher-dashboard-placeholder](media/dashboard.png)
+
+---
+
+## ⚙️ Tech Stack
+
+| Frontend     | Backend   | Database     | Authentication | Deployment |
+|--------------|-----------|--------------|----------------|------------|
+| React + CSS  | Flask     | PostgreSQL   | JWT-based Auth | Docker     |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker
+- Node.js (for frontend)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/peerly.git
+   cd peerly
+   ```
+
+2. Start the backend using Docker Compose:
+   ```bash
+   docker compose up
+   ```
+
+3. Start the frontend:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+---
+
+## 🧠 Known Challenges & Solutions
+
+### ❗ Bias in Peer Feedback  
+**Problem**: Personal relationships may affect feedback.  
+**Solution**: Anonymous evaluations encourage fairness.
+
+### ❗ System Confusion  
+**Problem**: New users might struggle with navigation.  
+**Solution**: Intuitive layout and clean UI guide users smoothly.
+
+### ❗ Instructor Overload  
+**Problem**: Too many teams and evaluations to monitor.  
+**Solution**: Teacher dashboard summarizes data and insights efficiently.
+
+---
+
+## 👥 Team Members & Roles
+
+- **Dara Dadgar** – *Team Leader*  
+  Dara excels at fostering collaboration and keeping the team aligned. He led sprint planning, assigned tasks, tracked progress, and maintained documentation.
+
+- **Marchelino Habchi** – *Full Stack Developer*  
+Marchelino is a versatile full stack developer who brings ideas to life from mockups to deployment. He designed and built the user interface from scratch, transforming rough concepts into clean, responsive pages. Beyond frontend development, he handled CSS styling, reworked mockups for better usability, and ensured seamless communication between the frontend and backend. He also contributed to backend integration and supported testing and debugging efforts.
+
+- **Daniel Secelean** – *Backend Developer*  
+  Daniel designed and implemented secure backend routes and helped deploy the application infrastructure.
+
+- **Mathieu Phan** – *Backend Developer*  
+  Mathieu supported the backend team by contributing API routes and working on the database models.
+
+- **Oren Argot** – *Frontend Developer*  
+  Assisted in developing frontend components and connecting to backend APIs.
+
+- **Brandon Phelps** – *Frontend Contributor*  
+  Participated in UI development and contributed feedback throughout the project.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE). You are free to use, modify, and distribute the code with attribution.
