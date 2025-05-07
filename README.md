@@ -35,7 +35,7 @@ Students evaluate each other across four dimensions using a 5-point scale with o
 
 ## 🖼️ Screenshots / GIFs
 
-> _Add screenshots or screen recordings to give users a visual idea of how Peerly works._
+> Here are screenshots and screen recordings to give a visual idea of how Peerly works.
 
 - 📸 **Sign-Up Page**
   ![signup-placeholder](media/signup.png)
