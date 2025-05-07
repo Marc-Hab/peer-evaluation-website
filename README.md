@@ -44,10 +44,10 @@ Students evaluate each other across four dimensions using a 5-point scale with o
   ![teams-placeholder](media/teams.gif)
 
 - 📸 **Peer Evaluation Form**
-  ![feedback-placeholder](media/feedback.png)
+  ![feedback-placeholder](media/feedback.gif)
 
 - 📸 **Teacher Review Panel**
-  ![teacher-dashboard-placeholder](media/dashboard.png)
+  ![teacher-dashboard-placeholder](media/dashboard.gif)
 
 ---
 
